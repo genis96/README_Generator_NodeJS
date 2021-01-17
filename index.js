@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const axios = require('axios');
+const axios = require('axios');
 const generate = require('./utils/generateMarkdown');
 
 // TODO: Include packages needed for this application 
@@ -10,12 +10,12 @@ const questions = [
     {
         type: 'input',
         message: 'What is your email?',
-        name: 'age'
+        name: 'email'
     },
     {
         type: 'input',
         message: 'What is the title of this project?',
-        name: 'color'
+        name: 'title'
     },
     {
         type: 'input',
@@ -32,11 +32,23 @@ function writeToFile(fileName, data) {
     // )
 }
 
+inquirer
+    .prompt(questions)
+    .then((data) => {
+        const githubUrl = `https://api.github.com/users/${data.github}`;
+        axios.get(githubUrl).then((x) => {
+            const info = {
+                name: x.data.name
+            };
+            console.log(questions)
+        })
+    })
+
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then(resp => {
-        writeToFile(resp)
-    })
+    // inquirer.prompt(questions).then(resp => {
+    //     writeToFile(resp)
+    // })
 }
 
 // Function call to initialize app

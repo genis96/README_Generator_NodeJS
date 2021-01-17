@@ -18,7 +18,7 @@
 // }
 
 
-function generateMarkdown(data) {
+function generateMarkdown(data, info) {
   return `
 # **${data.title}**
 ${data.badge}
