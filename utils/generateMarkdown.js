@@ -64,7 +64,8 @@ ${data.test}
 
 
 ## GitHub
-
+- ${info.name}
+- <${info.email}>
 `;
 }
 

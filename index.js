@@ -37,8 +37,10 @@ inquirer
     .then((data) => {
         const githubUrl = `https://api.github.com/users/${data.github}`;
         axios.get(githubUrl).then((x) => {
+            //info connected to the generateMarkdown file
             const info = {
-                name: x.data.name
+                name: x.data.name,
+                email: x.data.email
             };
             console.log(questions)
         })
