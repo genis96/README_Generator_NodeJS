@@ -1,7 +1,7 @@
-const fs = require('fs');
 const inquirer = require('inquirer');
-const axios = require('axios');
-const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require('fs');
+// const axios = require('axios');
+const generate = require('./utils/generateMarkdown');
 
 // TODO: Include packages needed for this application 
 
@@ -25,7 +25,12 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    // fs.writeFile (
+    //     '/README.md',
+    //     console.log('check check')
+    // )
+}
 
 // TODO: Create a function to initialize app
 function init() {
