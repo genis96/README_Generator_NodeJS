@@ -9,12 +9,12 @@ const generate = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input',
-        message: 'What is your age?',
+        message: 'What is your email?',
         name: 'age'
     },
     {
         type: 'input',
-        message: 'What is your favorite color?',
+        message: 'What is the title of this project?',
         name: 'color'
     },
     {
