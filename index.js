@@ -15,7 +15,7 @@ const inquirer = require('inquirer');
 //         }
 //     ])
 
-// TODO: Include packages needed for this application
+// TODO: Include packages needed for this application - 
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -27,6 +27,11 @@ const questions = [
     {
         type: 'input',
         message: 'What is your favorite color?',
+        name: 'color'
+    },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
         name: 'color'
     }
 ];
