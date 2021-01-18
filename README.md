@@ -3,7 +3,7 @@ Create a README Generator. It will quickly generate a new README file
 
 ## Walkthrough Video
 
-[Gif](md.gif)
+![Gif](md.gif)
 
 [Walkthrough Video Link](https://drive.google.com/file/d/1DN2HgMlJfG7WKT_Nf6ILe_JnToVkzBDN/view)
 
