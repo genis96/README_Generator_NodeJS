@@ -13,7 +13,7 @@ Create a README Generator. It will quickly generate a new README file
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub) 
 
-## INSTRUCTIONS
+## Instructions
 GIVEN a command-line application that accepts user input
 
 WHEN I am prompted for information about my application repository
