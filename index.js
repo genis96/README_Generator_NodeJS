@@ -55,6 +55,11 @@ const questions = [
         message: 'What is the project license?',
         name: 'licence' 
     },
+    {
+        type: 'input',
+        message: 'What is the repo link/name?',
+        name: 'repo' 
+    },
 ];
 
 // TODO: Create a function to write README file
