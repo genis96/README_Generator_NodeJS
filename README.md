@@ -1,4 +1,4 @@
-##Goal
+## Goal
 Create a README Generator. It will quickly generate a new README file
 
 ## Walkthrough Video
