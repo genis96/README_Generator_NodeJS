@@ -1,10 +1,10 @@
 
-# **gee**
-ge
+# **Generate Markdown - Nodejs**
+badge
 
 
 ## Description 
-ge
+Generates markdown using nodejs/inquirer/axios
 
 
 ## Table of contents
@@ -19,29 +19,29 @@ ge
 
 
 ## Installation
-ge
+install
 
 
 ## Usage
-ge
+usage
 
 
 ## Licence
-ge
+license
 
 
 ## Contributors
-ge
+my code
 
 
 ## Test
-ge
+inside README
 
 
 ## Repository
-- [Project Repo](ge)
+- [Project Repo](README_Generator_NodeJS)
 
 
 ## GitHub
-- ge
-- <ge>
+- genis96
+- <genis96@yahoo.com>
