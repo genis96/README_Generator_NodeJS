@@ -1,17 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const axios = require('axios');
-const generate = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Include packages needed for this application 
 
-// TODO: Create an array of questions for user input
 const questions = [
-    {
-        type: 'input',
-        message: 'What is your email?',
-        name: 'email'
-    },
     {
         type: 'input',
         message: 'What is the title of this project?',
@@ -20,17 +13,57 @@ const questions = [
     {
         type: 'input',
         message: 'What is your GitHub username?',
-        name: 'github'
-    }
+        name: 'username'
+    },
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email'
+    },
+    {
+        type: 'input',
+        message: 'Write a description for your project?',
+        name: 'description'
+    },
+    {
+        type: 'input',
+        message: 'What are the installation instructions?',
+        name: 'installation'
+    },
+    {
+        type: 'input',
+        message: 'What is the project badge?',
+        name: 'badge'
+    },
+    {
+        type: 'input',
+        message: 'What is the project usage?',
+        name: 'usage' 
+    },
+    {
+        type: 'input',
+        message: 'What are you contributing to the project?',
+        name: 'contributing'
+    },
+    {
+        type: 'input',
+        message: 'Provide test instruction for the project!',
+        name: 'test' 
+    },
+    {
+        type: 'input',
+        message: 'What is the project license?',
+        name: 'licence' 
+    },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    // fs.writeFile (
-    //     '/README.md',
-    //     console.log('check check')
-    // )
-}
+// function writeToFile(fileName, data) {
+//     fs.writeFile (
+//         '/README.md',
+//         console.log('check check')
+//     )
+// }
 
 inquirer
     .prompt(questions)
@@ -39,11 +72,11 @@ inquirer
         axios.get(githubUrl).then((x) => {
             //info connected to the generateMarkdown file
             const info = {
-                name: x.data.name,
+                name: x.data.username,
                 email: x.data.email
             };
             // console.log(questions)
-            fs.writeFile('README.md', generate(data, info), (err) => {
+            fs.writeFile('README.md', generateMarkdown(data, info), (err) => {
                 if(err) {
                     throw err;
                     // console.log(err);
@@ -60,5 +93,4 @@ function init() {
     // })
 }
 
-// Function call to initialize app
 init();

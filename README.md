@@ -1,10 +1,10 @@
 
-# **proj**
-undefined
+# **GENERATOR**
+genisBadge
 
 
 ## Description 
-undefined
+creates readme file with info
 
 
 ## Table of contents
@@ -19,23 +19,23 @@ undefined
 
 
 ## Installation
-        undefined
+json and inquirer, etc
 
 
 ## Usage
-undefined
+lots of usage
 
 
 ## Licence
-undefined
+genis.license
 ## Contributors
 
 
-undefined
+alot of info
 
 
 ## Test
-undefined
+axios test
 
 
 ## Repository
@@ -43,5 +43,5 @@ undefined
 
 
 ## GitHub
-- Genis B.
+- undefined
 - <null>

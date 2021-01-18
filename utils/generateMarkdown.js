@@ -17,7 +17,6 @@
 // `;
 // }
 
-
 function generateMarkdown(data, info) {
   return `
 # **${data.title}**
@@ -40,7 +39,7 @@ ${data.description}
 
 
 ## Installation
-        ${data.installation}
+${data.installation}
 
 
 ## Usage
