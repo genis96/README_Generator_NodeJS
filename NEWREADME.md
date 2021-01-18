@@ -1,10 +1,10 @@
 
-# **xxx**
-xxx
+# **Generate Markdown - NodeJS**
+badge
 
 
 ## Description 
-xxx
+generates markdown with the users answers
 
 
 ## Table of contents
@@ -19,11 +19,11 @@ xxx
 
 
 ## Installation
-xxx
+inquirer, axios, node modules
 
 
 ## Usage
-xxx
+usage
 
 
 ## Licence
@@ -31,17 +31,17 @@ MIT
 
 
 ## Contributors
-xxx
+my code
 
 
 ## Test
-xxx
+instructions are inside the README.md
 
 
 ## Repository
-- [Project Repo](xxx)
+- [Project Repo](README_Generator_NodeJS)
 
 
 ## GitHub
-- xxx
-- <xxx>
+- genis96
+- <genis96@yahoo.com>

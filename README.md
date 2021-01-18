@@ -2,6 +2,7 @@
 Create a README Generator. It will quickly generate a new README file
 
 ## Walkthrough Video
+[Walkthrough Video Link](https://drive.google.com/file/d/1DN2HgMlJfG7WKT_Nf6ILe_JnToVkzBDN/view)
 
 ## Table of contents
 - [Description](#Description)
