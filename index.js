@@ -3,7 +3,6 @@ const fs = require('fs');
 const axios = require('axios');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-
 const questions = [
     {
         type: 'input',
@@ -73,7 +72,7 @@ const questions = [
 inquirer
     .prompt(questions)
     .then((data) => {
-        const githubUrl = `https://api.github.com/users/${data.github}`;
+        const githubUrl = `https://api.github.com/users/${data.username}`;
         axios.get(githubUrl).then((x) => {
             //info connected to the generateMarkdown file
             const info = {
@@ -81,10 +80,9 @@ inquirer
                 email: x.data.email
             };
             // console.log(questions)
-            fs.writeFile('README.md', generateMarkdown(data, info), (err) => {
+            fs.writeFile('NEWREADME.md', generateMarkdown(data, info), (err) => {
                 if(err) {
                     throw err;
-                    // console.log(err);
                 };
                 console.log('File Created: SUCCESS!');
             })

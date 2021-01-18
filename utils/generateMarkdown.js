@@ -48,9 +48,9 @@ ${data.usage}
 
 ## Licence
 ${data.licence}
+
+
 ## Contributors
-
-
 ${data.contributing}
 
 
@@ -63,8 +63,8 @@ ${data.test}
 
 
 ## GitHub
-- ${info.name}
-- <${info.email}>
+- ${data.username}
+- <${data.email}>
 `;  
 }
 
