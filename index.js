@@ -42,7 +42,14 @@ inquirer
                 name: x.data.name,
                 email: x.data.email
             };
-            console.log(questions)
+            // console.log(questions)
+            fs.writeFile('README.md', generate(data, info), (err) => {
+                if(err) {
+                    throw err;
+                    // console.log(err);
+                };
+                console.log('File Created: SUCCESS!');
+            })
         })
     })
 

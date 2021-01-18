@@ -66,7 +66,7 @@ ${data.test}
 ## GitHub
 - ${info.name}
 - <${info.email}>
-`;
+`;  
 }
 
 module.exports = generateMarkdown;
